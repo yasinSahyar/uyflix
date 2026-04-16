@@ -106,7 +106,7 @@ const AccountForm = ({
   if (userQuery.isError) {
     return (
       <div className="text-lg text-red-500 sm:text-xl">
-        Error: {userQuery.error.message}
+        خاتالىق: {userQuery.error.message}
       </div>
     )
   }
@@ -114,11 +114,11 @@ const AccountForm = ({
   return (
     <div className="flex flex-col gap-5">
       <div className="space-y-2.5">
-        <h1 className="text-3xl sm:text-4xl">Account</h1>
+        <h1 className="text-3xl sm:text-4xl">ھېسابات</h1>
         <div className="flex items-center gap-2.5">
           <Icons.billing className="h-6 w-6 text-neutral-500" />
           <p className="text-sm font-medium text-neutral-500">
-            Member since {subStartDate ? formatDate(subStartDate) : "N/A"}
+            ئەزا بولغان ۋاقتى {subStartDate ? formatDate(subStartDate) : "N/A"}
           </p>
         </div>
       </div>
@@ -127,7 +127,7 @@ const AccountForm = ({
         <div className="flex flex-col gap-5 text-neutral-100">
           <div className="space-y-5">
             <h2 className="text-lg text-neutral-400 sm:text-xl">
-              MEMBERSHIP & BILLING
+              ئەزالىق ۋە ھېسابات
             </h2>
             <p>{userQuery.data?.email}</p>
           </div>
@@ -137,24 +137,24 @@ const AccountForm = ({
             href={`/account/users/${userQuery.data.id}`}
             className="flex items-center justify-between gap-4 hover:underline"
           >
-            Update account
+            ھېساباتنى يېڭىلاش
             <Icons.chevronRight className="h-5 w-5 text-neutral-500" />
           </Link>
           <Separator className="bg-neutral-700" />
           {!subscriptionPlan?.stripeSubscriptionId ? (
             <div className="flex flex-col gap-2.5">
-              <p>You are not currently subscribed to any plan.</p>
+              <p>سىز ھازىر ھېچقانداق پىلانغا مۇشتەرى بولمىغان.</p>
               <p>
-                Some errors must have occured during the subscription process,
-                or you might have canceled your subscription.
+                مۇشتەرىلىك جەريانىدا بەزى خاتالىقلار كۆرۈلگەن بولۇشى مۇمكىن،
+                ياكى سىز مۇشتەرىلىكىڭىزنى بىكار قىلغان بولۇشىڭىز مۇمكىن.
               </p>
               <p>
-                Either way, you can subscribe again by clicking{" "}
+                قانداق بولۇشىدىن قەتئىينەزەر، سىز قايتا مۇشتەرى بولالايسىز{" "}
                 <Link
                   href="/login/plans"
                   className="cursor-pointer text-blue-400 hover:underline"
                 >
-                  here
+                  بۇ يەردىن
                 </Link>
                 .
               </p>
@@ -162,9 +162,9 @@ const AccountForm = ({
           ) : (
             <p>
               {isCanceled
-                ? "Your plan will be canceled on "
-                : "Your plan renews on "}
-              {formatDate(subscriptionPlan.stripeCurrentPeriodEnd)}.
+                ? "سىزنىڭ پىلانىڭىز بىكار قىلىنىدۇ "
+                : "سىزنىڭ پىلانىڭىز يېڭىلىنىدۇ "}
+              {formatDate(subscriptionPlan.stripeCurrentPeriodEnd)} كۈنى.
             </p>
           )}
           <Separator className="bg-neutral-700" />
@@ -183,14 +183,14 @@ const AccountForm = ({
                     aria-hidden="true"
                   />
                 )}
-                {isCanceled ? "Renew Membership" : "Cancel Membership"}
+                {isCanceled ? "مۇشتەرىلىكنى قايتا ئاكتىپلاڭ" : "مۇشتەرىلىكنى بىكار قىلىڭ"}
               </Button>
               <Separator className="bg-neutral-600" />
             </>
           ) : null}
           <div className="space-y-5">
             <h2 className="text-lg text-neutral-400 sm:text-xl">
-              PLAN DETAILS
+              پىلان تەپسىلاتى
             </h2>
             <div className="flex items-center gap-2">
               <p>{subscriptionPlan?.name}</p>
@@ -205,12 +205,12 @@ const AccountForm = ({
             href="/login/plans"
             className="flex items-center justify-between gap-4 hover:underline"
           >
-            Change plan
+            پىلاننى ئۆزگەرتىش
             <Icons.chevronRight className="h-5 w-5 text-neutral-400" />
           </Link>
           <Separator className="bg-neutral-600" />
           <div className="space-y-2">
-            <h2 className="text-lg text-neutral-400 sm:text-xl">PROFILE</h2>
+            <h2 className="text-lg text-neutral-400 sm:text-xl">پروفىل</h2>
             <Accordion type="single" collapsible className="w-full">
               {userQuery.data?.profiles.map((profile) => (
                 <ProfileCard key={profile.id} profile={profile} />
@@ -296,12 +296,12 @@ const ProfileCard = ({ profile }: { profile: ProfileWithIcon }) => {
           >
             <fieldset className="grid w-full items-start gap-2">
               <label htmlFor="email" className="text-sm sm:text-base">
-                Profile Email:
+                پروفىل ئېلخەت:
               </label>
               <Input
                 id="email"
                 type="text"
-                placeholder="Profile Email"
+                placeholder="پروفىل ئېلخەت"
                 className="rounded-none"
                 {...register("email")}
                 defaultValue={profile?.email as string}
@@ -314,7 +314,7 @@ const ProfileCard = ({ profile }: { profile: ProfileWithIcon }) => {
             </fieldset>
             <fieldset className="grid w-full items-start gap-2">
               <label htmlFor="language" className="text-sm sm:text-base">
-                Language:
+                تىل:
               </label>
               <SelectInput
                 control={control}
@@ -330,12 +330,12 @@ const ProfileCard = ({ profile }: { profile: ProfileWithIcon }) => {
             </fieldset>
             <fieldset className="grid w-full items-start gap-3.5">
               <label htmlFor="pin" className="text-sm sm:text-base">
-                Profile Lock PIN:
+                پروفىل قۇلۇپ PIN كودى:
               </label>
               <Input
                 id="pin"
                 type="text"
-                placeholder="Profile Lock PIN"
+                placeholder="پروفىل قۇلۇپ PIN كودى"
                 className="rounded-none"
                 {...register("pin", {
                   setValueAs: (v: string) =>
@@ -362,7 +362,7 @@ const ProfileCard = ({ profile }: { profile: ProfileWithIcon }) => {
                   aria-hidden="true"
                 />
               )}
-              Save
+              ساقلاش
             </Button>
           </form>
         </AccordionContent>

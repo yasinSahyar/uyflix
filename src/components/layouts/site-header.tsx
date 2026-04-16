@@ -229,7 +229,7 @@ const SiteHeader = ({ session }: SiteHeaderProps) => {
                             className="line-clamp-1 grid place-items-center"
                             onClick={() => void signOut()}
                           >
-                            {item.title}
+                            Netflix تىن چىقىش
                           </span>
                         </DropdownMenuItem>
                       )
@@ -248,7 +248,7 @@ const SiteHeader = ({ session }: SiteHeaderProps) => {
                   })
                 )}
               >
-                Sign In
+                كىرىش
               </Link>
             )
           ) : (

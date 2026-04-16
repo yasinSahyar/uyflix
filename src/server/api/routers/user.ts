@@ -60,7 +60,7 @@ export const userRouter = createTRPCRouter({
       ) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "Email already in already taken",
+          message: "بۇ ئېلخەت ئادرېسى ئاللىبۇرۇن ئىشلىتىلگەن",
         })
       }
 
@@ -75,7 +75,7 @@ export const userRouter = createTRPCRouter({
       ) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "Phone number is already taken",
+          message: "بۇ تېلېفون نومۇرى ئاللىبۇرۇن ئىشلىتىلگەن",
         })
       }
 

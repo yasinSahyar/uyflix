@@ -41,7 +41,7 @@ export const myListRouter = createTRPCRouter({
       if (!profile) {
         throw new TRPCError({
           code: "NOT_FOUND",
-          message: "Profile not found",
+          message: "پروفىل تېپىلمىدى",
         })
       }
 
@@ -50,7 +50,7 @@ export const myListRouter = createTRPCRouter({
       if (show) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "Show already exists",
+          message: "بۇ فىلىم ئاللىبۇرۇن تىزىملىكتە بار",
         })
       }
 
@@ -109,7 +109,7 @@ export const myListRouter = createTRPCRouter({
       if (!profile) {
         throw new TRPCError({
           code: "NOT_FOUND",
-          message: "Profile not found",
+          message: "پروفىل تېپىلمىدى",
         })
       }
 
@@ -118,7 +118,7 @@ export const myListRouter = createTRPCRouter({
       if (!show) {
         throw new TRPCError({
           code: "NOT_FOUND",
-          message: "Show not found",
+          message: "فىلىم تېپىلمىدى",
         })
       }
 
@@ -163,7 +163,7 @@ export const myListRouter = createTRPCRouter({
       if (!profile) {
         throw new TRPCError({
           code: "NOT_FOUND",
-          message: "Profile not found",
+          message: "پروفىل تېپىلمىدى",
         })
       }
 
@@ -172,7 +172,7 @@ export const myListRouter = createTRPCRouter({
       if (!show) {
         throw new TRPCError({
           code: "NOT_FOUND",
-          message: "Show not found",
+          message: "فىلىم تېپىلمىدى",
         })
       }
 

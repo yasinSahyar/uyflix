@@ -82,9 +82,9 @@ const AddProfileForm = ({ profiles, profileIcon }: AddProfileFormProps) => {
           transition={{ duration: 0.3 }}
         >
           <div className="space-y-3">
-            <h1 className="text-3xl font-medium sm:text-5xl">Add Profile</h1>
+            <h1 className="text-3xl font-medium sm:text-5xl">پروفىل قوشۇش</h1>
             <p className="text-sm text-neutral-500 sm:text-base">
-              Add a profile for another person watching Netflix.
+              باشقا بىر كىشىنىڭ Netflix كۆرۈشى ئۈچۈن پروفىل قوشۇڭ.
             </p>
           </div>
           <Separator className="bg-neutral-700" />
@@ -114,12 +114,12 @@ const AddProfileForm = ({ profiles, profileIcon }: AddProfileFormProps) => {
               </Button>
               <fieldset className="grid w-full flex-1 items-start gap-2">
                 <label htmlFor="name" className="sr-only">
-                  Name
+                  ئىسىم
                 </label>
                 <Input
                   id="name"
                   type="text"
-                  placeholder="Name"
+                  placeholder="ئىسىم"
                   className="rounded-none"
                   {...register("name", { required: true })}
                 />
@@ -148,7 +148,7 @@ const AddProfileForm = ({ profiles, profileIcon }: AddProfileFormProps) => {
                     aria-hidden="true"
                   />
                 )}
-                Continue
+                داۋاملاشتۇرۇش
               </Button>
               <Button
                 aria-label="Cancel"
@@ -157,7 +157,7 @@ const AddProfileForm = ({ profiles, profileIcon }: AddProfileFormProps) => {
                 className="rounded-none"
                 onClick={() => router.back()}
               >
-                Cancel
+                بىكار قىلىش
               </Button>
             </div>
           </form>

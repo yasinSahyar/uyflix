@@ -19,11 +19,11 @@ const ErrorScreen = ({ error, reset }: ErrorScreenProps) => {
           aria-hidden="true"
         />
         <h1 className="text-center text-2xl font-bold text-red-500 dark:text-red-500 sm:text-2xl lg:text-3xl">
-          {error.message ?? "Something went wrong!"}
+          {error.message ?? "بىر نەرسە خاتا كەتتى!"}
         </h1>
         <Button aria-label="Retry" variant="flat" onClick={() => reset()}>
           <Icons.refresh className="mr-2 h-4 w-4" aria-hidden="true" />
-          Retry
+          قايتا سىناڭ
         </Button>
       </div>
     </section>

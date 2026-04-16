@@ -14,19 +14,19 @@ export default async function NewAndPopularPage() {
 
   const allShowsByCategory: CategorizedShows[] = [
     {
-      title: "New TV Shows",
+      title: "يېڭى تېلېۋىزىيە فىلىملىرى",
       shows: allShows.trendingTvs,
     },
     {
-      title: "New Movies",
+      title: "يېڭى كىنو فىلىملىرى",
       shows: allShows.trendingMovies,
     },
     {
-      title: "Popular TV Shows",
+      title: "داڭلىق تېلېۋىزىيە فىلىملىرى",
       shows: allShows.popularTvs,
     },
     {
-      title: "Popular Movies",
+      title: "داڭلىق كىنو فىلىملىرى",
       shows: allShows.popularMovies,
     },
   ]

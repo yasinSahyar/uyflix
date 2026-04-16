@@ -56,7 +56,7 @@ export default async function ResetPinPage({ params }: ResetPinPageProps) {
     <section className="container min-h-screen w-full max-w-6xl space-y-8 pb-16 pt-10">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <h1 className="text-center text-2xl font-medium sm:text-3xl">
-          Profile Lock
+          پروفىل قۇلۇپى
         </h1>
         <Image
           src={profile.icon.href}
@@ -68,7 +68,7 @@ export default async function ResetPinPage({ params }: ResetPinPageProps) {
       </div>
       <div className="space-y-6">
         <h2 className="text-xl font-medium sm:text-2xl">
-          Lock this profile by creating a 4-digit pin.
+          بۇ پروفىلنى 4 خانىلىق پىن قۇرۇپ قۇلۇپلاڭ.
         </h2>
         <ResetPinForm profile={profile} />
       </div>

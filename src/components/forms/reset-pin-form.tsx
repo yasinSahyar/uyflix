@@ -89,7 +89,7 @@ const ResetPinForm = ({ profile }: ResetPinFormProps) => {
           control={control}
           name="pinStatus"
           id="pinStatus"
-          label="Require a PIN to access Sadman's profile."
+          label="سادماننىڭ پروفىلىغا كىرىش ئۈچۈن PIN كودى تەلەپ قىلىنسۇن."
           defaultChecked={!!profile.pin}
         />
         {formState.errors.pinStatus && (
@@ -102,12 +102,12 @@ const ResetPinForm = ({ profile }: ResetPinFormProps) => {
         (watch("pinStatus") === undefined || watch("pinStatus")) && (
           <fieldset className="grid w-full items-start gap-2.5">
             <label htmlFor="pin" className="sr-only">
-              Profile Lock PIN
+              پروفىل قۇلۇپى PIN كودى
             </label>
             <Input
               id="pin"
               type="text"
-              placeholder="Profile Lock PIN"
+              placeholder="پروفىل قۇلۇپى PIN كودى"
               className="max-w-[6.25rem] rounded-none"
               {...register("pin", {
                 setValueAs: (v: string) =>
@@ -137,7 +137,7 @@ const ResetPinForm = ({ profile }: ResetPinFormProps) => {
               aria-hidden="true"
             />
           )}
-          Save
+          ساقلاش
         </Button>
         <Button
           aria-label="Cancel"
@@ -148,7 +148,7 @@ const ResetPinForm = ({ profile }: ResetPinFormProps) => {
           onClick={() => router.push("/account")}
           disabled={updatePinMutation.isLoading}
         >
-          Cancel
+          بىكار قىلىش
         </Button>
       </div>
     </form>

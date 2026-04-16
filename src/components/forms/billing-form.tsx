@@ -81,22 +81,18 @@ const BillingForm = ({ subscriptionPlan, isCanceled }: BillingFormProps) => {
         </div>
         <div className="flex flex-col gap-2 text-sm text-neutral-500 dark:text-neutral-400">
           <p>
-            HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability
-            subject to your internet service and device capabilities. Not all
-            content is available in all resolutions. See our{" "}
+            HD (720p)، Full HD (1080p)، Ultra HD (4K) ۋە HDR نىڭ بار-يوقلۇقى سىزنىڭ ئىنتېرنېت مۇلازىمىتىڭىز ۋە ئۈسكۈنىڭىزنىڭ ئىقتىدارىغا باغلىق. بارلىق مەزمۇنلار ھەممە رېزوليۇتسىيەدە بار بولمايدۇ. تېخىمۇ كۆپ تەپسىلات ئۈچۈن{" "}
             <Link
               href="/terms-of-use"
               target="_blank"
               className="text-blue-400 hover:underline"
             >
-              Terms of Use
+              ئىشلىتىش شەرتلىرى
             </Link>{" "}
-            for more details.
+            نى كۆرۈڭ.
           </p>
           <p>
-            Only people who live with you may use your account. Watch on 4
-            different devices at the same time with Premium, 2 with Standard,
-            and 1 with Basic and Mobile.
+            پەقەت سىز بىلەن بىللە تۇرۇۋاتقان كىشىلەرلا ھېساباتىڭىزنى ئىشلىتەلەيدۇ. Premium پىلان بىلەن بىر ۋاقىتتا 4 ئۈسكۈنىدە، Standard بىلەن 2 ئۈسكۈنىدە، Basic ۋە Mobile بىلەن 1 ئۈسكۈنىدە كۆرەلەيسىز.
           </p>
         </div>
       </div>
@@ -117,8 +113,8 @@ const BillingForm = ({ subscriptionPlan, isCanceled }: BillingFormProps) => {
           {subscriptionPlan &&
           !isCanceled &&
           subscriptionPlan.name === selectedPlan?.name
-            ? "Update"
-            : "Subscribe"}
+            ? "يېڭىلاش"
+            : "مۇشتەرى بولۇش"}
         </Button>
       </div>
     </section>

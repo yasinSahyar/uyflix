@@ -12,31 +12,31 @@ export default async function Home() {
 
   const allShowsByCategory: CategorizedShows[] = [
     {
-      title: "Trending Now",
+      title: "ھازىر ئالقىشلىنىۋاتقان",
       shows: allShows.trending,
     },
     {
-      title: "Top Rated",
+      title: "ئەڭ يۇقىرى باھالانغان",
       shows: allShows.topRated,
     },
     {
-      title: "Action Thrillers",
+      title: "ھەرىكەتلىك تىرللېرلار",
       shows: allShows.action,
     },
     {
-      title: "Comedies",
+      title: "كومېدىيەلىك فىلىملەر",
       shows: allShows.comedy,
     },
     {
-      title: "Scary Movies",
+      title: "قورقۇنچلۇق فىلىملەر",
       shows: allShows.horror,
     },
     {
-      title: "Romance Movies",
+      title: "مۇھەببەت فىلىملىرى",
       shows: allShows.romance,
     },
     {
-      title: "Documentaries",
+      title: "ھۆججەتلىك فىلىملەر",
       shows: allShows.docs,
     },
   ]

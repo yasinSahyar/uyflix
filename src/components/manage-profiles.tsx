@@ -22,7 +22,7 @@ const ManageProfiles = ({ profiles }: ManageProfilesProps) => {
   return (
     <div className="container flex min-h-screen w-full max-w-5xl flex-col items-center justify-center space-y-8">
       <h1 className="text-center text-3xl font-medium sm:text-4xl">
-        Manage Profiles:
+        پروفىللارنى باشقۇرۇش:
       </h1>
       <div className="flex flex-wrap items-start justify-center gap-2 pb-8 sm:gap-4 md:gap-8">
         {profilesQuery.data?.map((profile) => (
@@ -84,7 +84,7 @@ const ManageProfiles = ({ profiles }: ManageProfilesProps) => {
               </div>
             </div>
             <h2 className="text-sm text-slate-400 group-hover:text-slate-50 sm:text-base">
-              Add Profile
+              پروفىل قوشۇش
             </h2>
           </Button>
         )}
@@ -95,7 +95,7 @@ const ManageProfiles = ({ profiles }: ManageProfilesProps) => {
         size="auto"
         onClick={() => void router.push("/")}
       >
-        Done
+        تامام
       </Button>
     </div>
   )

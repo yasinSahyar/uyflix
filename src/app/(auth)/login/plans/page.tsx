@@ -36,7 +36,7 @@ export default async function PlansPage() {
   return (
     <section className="container flex w-full max-w-6xl flex-col gap-5 pb-16 pt-10">
       <h1 className="text-3xl font-bold sm:text-4xl">
-        Choose the plan that’s right for you
+        سىزگە ماس كېلىدىغان پلاننى تاللاڭ
       </h1>
       <div className="flex w-full flex-col gap-2">
         {plansConfig.perks.map((perk, i) => (

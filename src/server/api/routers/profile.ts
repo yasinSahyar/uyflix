@@ -52,7 +52,7 @@ export const profileRouter = createTRPCRouter({
       if (profiles.length >= 5) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "You can only have 5 profiles",
+          message: "سىز پەقەت 5 پروفىل قوشالايسىز",
         })
       }
 
@@ -63,7 +63,7 @@ export const profileRouter = createTRPCRouter({
       if (profileName) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "Profile name is already taken",
+          message: "بۇ پروفىل ئىسمى ئاللىبۇرۇن ئىشلىتىلگەن",
         })
       }
 
@@ -74,7 +74,7 @@ export const profileRouter = createTRPCRouter({
       if (profileIcon) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "Profile icon is already taken",
+          message: "بۇ پروفىل ئىكونى ئاللىبۇرۇن ئىشلىتىلگەن",
         })
       }
 
@@ -109,7 +109,7 @@ export const profileRouter = createTRPCRouter({
       if (profileName && profileName.name && profileName.id !== input.id) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "Profile name is already taken",
+          message: "بۇ پروفىل ئىسمى ئاللىبۇرۇن ئىشلىتىلگەن",
         })
       }
 
@@ -120,7 +120,7 @@ export const profileRouter = createTRPCRouter({
       if (profileEmail && profileEmail.email && profileEmail.id !== input.id) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "Email is already taken",
+          message: "ئېلخەت ئادرېسى ئاللىبۇرۇن ئىشلىتىلگەن",
         })
       }
 
@@ -135,7 +135,7 @@ export const profileRouter = createTRPCRouter({
       ) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "Game handle is already taken",
+          message: "ئويۇن ھېساباتى ئاللىبۇرۇن ئىشلىتىلگەن",
         })
       }
 

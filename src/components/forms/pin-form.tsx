@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 import { useRouter } from "next/navigation"
 import { useProfileStore } from "@/stores/profile"
@@ -42,7 +44,7 @@ const PinForm = () => {
       </Button>
       <div className="flex flex-col items-center gap-2.5">
         <div className="text-center text-base font-medium text-neutral-400 sm:text-lg">
-          Profile Lock is currently on.
+          پروفىل قۇلۇپى ھازىر ئاكتىپ.
         </div>
         <h1
           className={cn(
@@ -51,8 +53,8 @@ const PinForm = () => {
           )}
         >
           {error
-            ? "Whoops, wrong PIN. Please try again."
-            : "Enter your PIN to access your profile."}
+            ? "ئاپلا، PIN كودى خاتا. قايتا سىناپ باقىڭ."
+            : "پروفىلىڭىزغا كىرىش ئۈچۈن PIN كودىڭىزنى كىرگۈزۈڭ."}
         </h1>
       </div>
       <fieldset className="grid w-full place-items-center gap-2">
@@ -83,7 +85,7 @@ const PinForm = () => {
           regexCriteria={/^[ A-Za-z0-9_@./#&+-]*$/}
         />
         <div className="text-base font-medium text-red-500 dark:text-red-500 sm:text-lg">
-          Your PIN must be 4 numbers.
+          PIN كودىڭىز 4 خانە سان بولۇشى كېرەك.
         </div>
       </fieldset>
       <Button
@@ -97,7 +99,7 @@ const PinForm = () => {
         }}
         disabled={!profileStore.profile}
       >
-        Forgot PIN?
+        PIN كودىنى ئۇنتۇپ قالدىڭىزمۇ؟
       </Button>
     </div>
   )

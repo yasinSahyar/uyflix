@@ -62,9 +62,9 @@ const IconPicker = ({ setIconPicker, icon, setIcon }: IconPickerProps) => {
               <Icons.arrowLeft className="h-10 w-10" aria-hidden="true" />
             </Button>
             <div>
-              <h1 className="text-2xl font-medium sm:text-3xl">Edit Profile</h1>
+              <h1 className="text-2xl font-medium sm:text-3xl">پروفىلنى تەھرىرلەش</h1>
               <h2 className="text-xl font-medium sm:text-2xl">
-                Choose a profile icon.
+                پروفىل ئىكونى تاللاڭ.
               </h2>
             </div>
           </div>
@@ -93,11 +93,11 @@ const IconPicker = ({ setIconPicker, icon, setIcon }: IconPickerProps) => {
         </div>
       </div>
       <div className="container flex w-full max-w-screen-2xl flex-col gap-2.5">
-        <div className="text-xl font-medium sm:text-2xl">The Classics</div>
+        <div className="text-xl font-medium sm:text-2xl">كلاسسىكلار</div>
         {iconsQuery.isError ? (
           <div className="space-y-2.5">
             <div className="text-xl font-medium text-red-500 sm:text-2xl">
-              Failed to load profiles
+              پروفىللارنى يۈكلەش مەغلۇپ بولدى
             </div>
             <Button
               aria-label="Retry"
@@ -105,7 +105,7 @@ const IconPicker = ({ setIconPicker, icon, setIcon }: IconPickerProps) => {
               onClick={() => void iconsQuery.refetch()}
             >
               <Icons.refresh className="mr-2 h-4 w-4" aria-hidden="true" />
-              Retry
+              قايتا سىناڭ
             </Button>
           </div>
         ) : (

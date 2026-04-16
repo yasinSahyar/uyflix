@@ -66,7 +66,7 @@ const ProfilesScreen = ({ session, children }: ProfilesScreenProps) => {
         transition={{ duration: 0.3 }}
       >
         <h1 className="text-center text-3xl font-medium sm:text-4xl">
-          {`Who's`} watching?
+          كىم كۆرۈۋاتىدۇ؟
         </h1>
         <div className="flex flex-wrap items-start justify-center gap-2 pb-8 sm:gap-4 md:gap-8">
           {profilesQuery.isLoading
@@ -128,7 +128,7 @@ const ProfilesScreen = ({ session, children }: ProfilesScreenProps) => {
           onClick={() => router.push("/profiles")}
           disabled={profilesQuery.isLoading || profilesQuery.isError}
         >
-          Manage Profiles
+          پروفىللارنى باشقۇرۇش
         </Button>
       </motion.div>
     )

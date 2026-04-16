@@ -75,7 +75,7 @@ export function MainNav({ items }: MainNavProps) {
             className="h-auto px-2 py-1.5 text-base hover:bg-neutral-800 focus:ring-0 dark:hover:bg-neutral-800 lg:hidden"
           >
             <Icons.logo className="mr-2 h-4 w-4 text-red-600" />
-            <span className="font-bold">Menu</span>
+            <span className="font-bold">مېنىيۇ</span>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent

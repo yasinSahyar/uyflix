@@ -106,7 +106,7 @@ const EditProfileForm = ({ profile }: EditProfileFormProps) => {
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.3 }}
         >
-          <h1 className="text-3xl font-medium sm:text-5xl">Edit Profile</h1>
+          <h1 className="text-3xl font-medium sm:text-5xl">پروفىلنى تەھرىرلەش</h1>
           <Separator className="bg-neutral-700" />
           <form
             className="mt-2 grid w-full gap-5"
@@ -132,12 +132,12 @@ const EditProfileForm = ({ profile }: EditProfileFormProps) => {
               <div className="w-full flex-1 space-y-5">
                 <fieldset className="grid w-full items-start gap-2">
                   <label htmlFor="name" className="sr-only">
-                    Name
+                    ئىسىم
                   </label>
                   <Input
                     id="name"
                     type="text"
-                    placeholder="Name"
+                    placeholder="ئىسىم"
                     className="rounded-none"
                     {...register("name", { required: true })}
                     defaultValue={profile?.name}
@@ -153,7 +153,7 @@ const EditProfileForm = ({ profile }: EditProfileFormProps) => {
                     htmlFor="language"
                     className="text-base text-neutral-400 sm:text-lg"
                   >
-                    Language:
+                    تىل:
                   </label>
                   <SelectInput
                     control={control}
@@ -170,18 +170,16 @@ const EditProfileForm = ({ profile }: EditProfileFormProps) => {
                 <fieldset className="grid w-full items-start gap-3.5">
                   <label htmlFor="gameHandle" className="flex flex-col gap-2">
                     <span className="text-base text-neutral-400 sm:text-lg">
-                      Game Handle:
+                      ئويۇن ھېساباتى (Game Handle):
                     </span>
                     <span>
-                      Your handle is a unique name {`that'll`} be used for
-                      playing with other Netflix members across all Netflix
-                      Games. Learn more
+                      سىزنىڭ ھېساباتىڭىز باشقا Netflix ئەزالىرى بىلەن ئويۇن ئويناشتا ئىشلىتىلىدىغان ئۆزگىچە نام. تېخىمۇ كۆپ ئۇچۇر
                     </span>
                   </label>
                   <Input
                     id="gameHandle"
                     type="text"
-                    placeholder="Create Game Handle"
+                    placeholder="ئويۇن ھېساباتى قۇرۇش"
                     className="rounded-none"
                     {...register("gameHandle")}
                     defaultValue={profile?.gameHandle ?? ""}
@@ -212,7 +210,7 @@ const EditProfileForm = ({ profile }: EditProfileFormProps) => {
                     aria-hidden="true"
                   />
                 )}
-                Save
+                ساقلاش
               </Button>
               <Button
                 aria-label="Cancel"
@@ -221,7 +219,7 @@ const EditProfileForm = ({ profile }: EditProfileFormProps) => {
                 className="rounded-none"
                 onClick={() => router.back()}
               >
-                Cancel
+                بىكار قىلىش
               </Button>
               <Button
                 aria-label="Delete profile"
@@ -237,7 +235,7 @@ const EditProfileForm = ({ profile }: EditProfileFormProps) => {
                     aria-hidden="true"
                   />
                 )}
-                Delete Profile
+                پروفىلنى ئۆچۈرۈش
               </Button>
             </div>
           </form>

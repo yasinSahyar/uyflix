@@ -105,7 +105,7 @@ const ShowModal = ({ open, setOpen }: ShowModalProps) => {
   const addShowMutation = api.myList.create.useMutation({
     onSuccess: () => {
       setIsAdded(true)
-      toast.success("Added to My List")
+      toast.success("تىزىملىكىمگە قوشۇلدى")
     },
     onError: (error) => {
       toast.error(error.message)
@@ -116,7 +116,7 @@ const ShowModal = ({ open, setOpen }: ShowModalProps) => {
   const removeShowMuation = api.myList.delete.useMutation({
     onSuccess: () => {
       setIsAdded(false)
-      toast.success("Removed from My List")
+      toast.success("تىزىملىكىمدىن چىقىرىۋېتىلدى")
     },
     onError: (error) => {
       toast.error(error.message)
@@ -172,7 +172,7 @@ const ShowModal = ({ open, setOpen }: ShowModalProps) => {
                       className="mr-1.5 h-6 w-6 fill-current"
                       aria-hidden="true"
                     />
-                    Pause
+                    توختىتىش
                   </>
                 ) : (
                   <>
@@ -180,7 +180,7 @@ const ShowModal = ({ open, setOpen }: ShowModalProps) => {
                       className="mr-1.5 h-6 w-6 fill-current"
                       aria-hidden="true"
                     />
-                    Play
+                    قويۇش
                   </>
                 )}
               </Button>
@@ -269,7 +269,7 @@ const ShowModal = ({ open, setOpen }: ShowModalProps) => {
             <p className="font-semibold text-green-400">
               {Math.round((Number(modalStore.show?.vote_average) / 10) * 100) ??
                 "-"}
-              % Match
+              % ماس كېلىدۇ
             </p>
             {modalStore.show?.release_date ? (
               <p>{getYear(modalStore.show?.release_date)}</p>
@@ -286,7 +286,7 @@ const ShowModal = ({ open, setOpen }: ShowModalProps) => {
             {modalStore.show?.overview ?? "-"}
           </DialogDescription>
           <div className="flex items-center gap-2 text-xs sm:text-sm">
-            <span className="text-slate-400">Genres:</span>
+            <span className="text-slate-400">ژانىرلار:</span>
             {genres.map((genre) => genre.name).join(", ")}
           </div>
         </div>

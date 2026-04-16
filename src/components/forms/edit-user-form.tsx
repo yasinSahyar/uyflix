@@ -68,11 +68,11 @@ const EditUserForm = ({ user }: EditUserFormProps) => {
   return (
     <div className="flex flex-col gap-5">
       <div className="space-y-2.5">
-        <h1 className="text-3xl sm:text-4xl">Account</h1>
+        <h1 className="text-3xl sm:text-4xl">ھېسابات</h1>
         <div className="flex items-center gap-2.5">
           <Icons.edit2 className="h-6 w-6 text-neutral-500" />
           <p className="text-sm font-medium text-neutral-500">
-            Update your account details.
+            ھېساباتىڭىزنىڭ تەپسىلاتلىرىنى يېڭىلاڭ.
           </p>
         </div>
       </div>
@@ -83,12 +83,12 @@ const EditUserForm = ({ user }: EditUserFormProps) => {
       >
         <fieldset className="grid w-full items-start gap-2">
           <label htmlFor="accountEmail" className="text-sm sm:text-base">
-            Account Email:
+            ھېسابات ئېلخېتى:
           </label>
           <Input
             id="accountEmail"
             type="text"
-            placeholder="Account Email"
+            placeholder="ھېسابات ئېلخېتى"
             className="rounded-none"
             {...register("email", { required: true })}
             defaultValue={user.email as string}
@@ -101,12 +101,12 @@ const EditUserForm = ({ user }: EditUserFormProps) => {
         </fieldset>
         <fieldset className="grid w-full items-start gap-3.5">
           <label htmlFor="accountPhoneNumber" className="text-sm sm:text-base">
-            Account Phone Number:
+            ھېسابات تېلېفون نومۇرى:
           </label>
           <Input
             id="accountPhoneNumber"
             type="text"
-            placeholder="Account Phone Number"
+            placeholder="ھېسابات تېلېفون نومۇرى"
             className="rounded-none"
             {...register("phoneNumber")}
             defaultValue={user.phoneNumber as string}
@@ -130,7 +130,7 @@ const EditUserForm = ({ user }: EditUserFormProps) => {
               aria-hidden="true"
             />
           )}
-          Save
+          ساقلاش
         </Button>
       </form>
     </div>

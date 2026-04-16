@@ -47,7 +47,7 @@ export const metadata = {
   ],
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "ug_CN",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -79,7 +79,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <TRPCProvider>
       <html
-        lang="en"
+        lang="ug"
         className={cn(
           "scroll-smooth bg-neutral-900 font-sans text-slate-50 antialiased",
           fontSans.variable

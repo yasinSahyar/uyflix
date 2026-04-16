@@ -44,13 +44,13 @@ const SiteFooter = () => {
           )}
         </ul>
         <SetTextButton
-          initialText="Service Code"
+          initialText="مۇلازىمەت كودى"
           finalText={Math.random().toString(36).substring(7)}
           variant="outline"
           className="h-auto w-fit rounded-none py-1.5 text-sm text-neutral-400 dark:text-neutral-400"
         />
         <p className="text-xs sm:text-sm">
-          @ 2023-{new Date().getFullYear()} Netflx.
+          © 2023-{new Date().getFullYear()} Netflx.
         </p>
       </div>
     </footer>

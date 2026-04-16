@@ -35,39 +35,34 @@ export default async function HelpCenterPage() {
       >
         <div className="flex flex-col items-center justify-center gap-5">
           <h1 className="text-center text-3xl font-medium sm:text-4xl">
-            Help Center
+            ياردەم مەركىزى
           </h1>
           <p className="text-center text-xl font-medium sm:text-2xl">
-            How to do a heelflip
+            ھېلفلىپ قىلىش ئۇسۇلى
           </p>
           <ul className="list-inside list-disc text-xl">
-            <li>Push on your skateboard</li>
+            <li>سكېيت بوردىڭىزنى ئىتتىرىڭ</li>
             <li>
-              Place your front foot below the bolts with your toes hanging off
-              the board and ball of the foot on the edge of the deck
+              ئالدى پۇتىڭىزنى بولتىلارنىڭ ئاستىغا قويۇڭ، بارماقلىرىڭىز تاختىنىڭ چېتىدىن چىقىپ تۇرسۇن، پۇتىڭىزنىڭ توپى تاختىنىڭ گىرۋىكىدە بولسۇن
             </li>
             <li>
-              Place your back foot on the tail of the board with the ball right
-              on the edge of the deck
+              كەينى پۇتىڭىزنى تاختىنىڭ كەينى تەرىپىگە قويۇڭ، پۇتىڭىزنىڭ توپى تاختىنىڭ گىرۋىكىدە بولسۇن
             </li>
             <li>
-              Adopt a low stance, pop an ollie, and lean back toward your heels
+              تۆۋەن تۇرۇش ھالىتىنى قوبۇل قىلىڭ، ئوللىي قىلىڭ ۋە كەينىگە قاراپ مايىل بولۇڭ
             </li>
             <li>
-              As the skateboard starts to rise in the air, slide your front foot
-              up the deck
+              سكېيت بوردى ئاسمانغا كۆتۈرۈلۈشكە باشلىغاندا، ئالدى پۇتىڭىزنى تاختىنىڭ ئۈستىگە سۈرۈڭ
             </li>
             <li>
-              As your front foot starts coming off the edge of the board, flick
-              it, or press your heel down into the edge of the nose
+              ئالدى پۇتىڭىز تاختىنىڭ گىرۋىكىدىن چىقىشقا باشلىغاندا، ئۇنى چېقىڭ ياكى پاشنىڭىزنى بۇرۇننىڭ گىرۋىكىگە بېسىڭ
             </li>
-            <li>Watch the board spin around its axis underneath you</li>
+            <li>تاختىنىڭ ئۆز ئوقى ئەتراپىدا ئايلىنىۋاتقانلىقىنى كۆرۈڭ</li>
             <li>
-              When the rotation is complete, catch the board with your back foot
-              and immediately put your front foot on it
+              ئايلىنىش تاماملانغاندا، تاختىنى كەينى پۇتىڭىز بىلەن تۇتۇڭ ۋە دەرھال ئالدى پۇتىڭىزنى قويۇڭ
             </li>
-            <li>Drop your legs down to get the board parallel to the ground</li>
-            <li>Land the skateboard with your knees bent and roll away</li>
+            <li>پۇتىڭىزنى تۆۋەن چۈشۈرۈپ تاختىنى يەرگە پاراللېل ھالەتكە كەلتۈرۈڭ</li>
+            <li>تىزىڭىزنى بۈكۈپ سكېيت بوردىغا چۈشۈڭ ۋە يۈرۈپ كېتىڭ</li>
           </ul>
         </div>
       </Suspense>
